@@ -1,3 +1,10 @@
+---
+label: Welcome
+icon: home
+---
+
+> This page has been generated automatically!
+
 # CI/CD for your Flutter Project with GitHub Actions
 
 This project is a demo for my talk given at Flisol SCESI 2022.  
