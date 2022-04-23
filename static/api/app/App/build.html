@@ -107,17 +107,12 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  return const MaterialApp(
-    home: Scaffold(
-      body: Center(
-        child: Text(
-          &#39;&#39;&#39;
-This app only checks for internet connectivity, but hey!
-It implements a CI&#47;CD workflow with GitHub Actions ;)
-          &#39;&#39;&#39;,
-        ),
+  return BlocProvider&lt;ConnectivityBloc&gt;(
+    create: (_) =&gt; ConnectivityBloc(Connectivity())
+      ..add(
+        const ConnectivityRequested(),
       ),
-    ),
+    child: const _AppView(),
   );
 }</code></pre>
 </section>
