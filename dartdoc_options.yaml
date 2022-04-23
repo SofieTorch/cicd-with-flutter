@@ -1,2 +1,2 @@
 dartdoc:
-  include: ['app']
+  include: ['app', 'connectivity']
